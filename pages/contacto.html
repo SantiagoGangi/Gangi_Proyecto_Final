@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO -->
+    <!-- Descripción -->
+    <meta
+      name="description"
+      content="¿Tenés dudas o querés planificar tu próximo viaje? Contactate con TravelFasCure y recibí atención personalizada."
+    />
+
+    <!-- Autor -->
+    <meta name="author" content="Santiago Gangi" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/css/main.css" />
+    <title>Contacto - TravelFasCure</title>
+    <link rel="icon" href="/images/index/icono.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="header position-relative">
+      <!-- Carrusel de fondo -->
+
+      <div
+        id="bgCarousel"
+        class="carousel slide position-absolute top-0 start-0 w-100 h-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="/images/contacto/Telefono.jpg"
+              class="d-block w-100 h-100"
+              alt="Telefono negro"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="/images/contacto/Compu_Celular.jpg"
+              class="d-block w-100 h-100"
+              alt="Persona con una laptop mirando un celular"
+            />
+          </div>
+
+          <div class="carousel-item">
+            <img
+              src="/images/contacto/Abrazo.jpg"
+              class="d-block w-100 h-100"
+              alt="Amigos en puesta de sol abrazados"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido del header -->
+
+      <div class="header-content">
+        <h1>TravelFasCure <br />Contacto</h1>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container-fluid">
+        <!-- Menú -->
+
+        <div class="collapse navbar-collapse" id="opciones">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="informacion.html">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="destinos.html">Destinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Botón hamburguesa -->
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#opciones"
+          aria-controls="opciones"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <section class="contacto">
+      <div class="container-contacto">
+        <div class="intro">
+          <h2>¡Planificá tus próximas vacaciones!</h2>
+          <p>
+            Completá el <strong>formulario</strong> y uno de nuestros asesores
+            se pondrá en contacto con vos para diseñar el
+            <strong>viaje perfecto</strong> según tus fechas, destinos y
+            preferencias.
+          </p>
+        </div>
+
+        <div class="contenido">
+          <!-- Bloque lateral de contacto -->
+
+          <div class="info-contacto">
+            <h3>Contactanos directamente</h3>
+            <ul>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Av. Principal 1234,
+                Buenos Aires, Argentina
+              </li>
+              <li><i class="fa-solid fa-phone"></i> +54 9 11 5555-5555</li>
+              <li>
+                <i class="fa-solid fa-envelope"></i> info@travelfascure.com
+              </li>
+              <li>
+                <i class="fa-solid fa-clock"></i> Lunes a Viernes de 9:00 a
+                18:00 hs
+              </li>
+            </ul>
+          </div>
+
+          <!-- Formulario -->
+
+          <form class="formulario-contacto">
+            <div class="grupo">
+              <label>Nombre completo</label>
+              <input type="text" placeholder="Ej: Victor Fernandez" required />
+            </div>
+
+            <div class="grupo">
+              <label>Correo electrónico</label>
+              <input
+                type="email"
+                placeholder="Ej: usuario@gmail.com"
+                required
+              />
+            </div>
+
+            <div class="grupo">
+              <label for="telefono">Teléfono</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Ej: +54 9 11 5555-5555"
+                pattern="^\+?\d{1,3}?\s?\d{1,4}[\s\-]?\d{3,4}[\s\-]?\d{3,4}$"
+                required
+              />
+            </div>
+
+            <div class="grupo">
+              <label for="destino">Destino deseado</label>
+              <select id="destino" required>
+                <option value="" disabled selected>
+                  Seleccioná un destino
+                </option>
+                <option>Bariloche</option>
+                <option>Mar del Plata</option>
+                <option>Jujuy</option>
+                <option>Misiones</option>
+                <option>Salta</option>
+                <option>Formosa</option>
+                <option>Brasil</option>
+                <option>Paraguay</option>
+                <option>Colombia</option>
+                <option>Venezuela</option>
+                <option>Chile</option>
+                <option>Uruguay</option>
+              </select>
+            </div>
+
+            <div class="grupo">
+              <label for="fechaSalida">Fecha de salida</label>
+              <input type="date" id="fechaSalida" name="fechaSalida" required />
+              <span
+                id="errorFecha"
+                style="color: red; font-size: 0.9em; display: none"
+              >
+                No podés seleccionar una fecha pasada.
+              </span>
+            </div>
+
+            <div class="grupo">
+              <label>Duración estimada</label>
+              <input type="text" placeholder="Ej: 7 días, 10 noches" />
+            </div>
+
+            <div class="grupo grupo-textarea">
+              <label>Comentarios o preferencias</label>
+              <textarea
+                rows="4"
+                placeholder="Ej: Quisiera un paquete con excursiones y hotel con desayuno incluido..."
+              ></textarea>
+            </div>
+
+            <button type="submit">Enviar consulta</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <p class="footer-title">
+        &copy; <span class="footer-name">TravelFasCure</span>
+      </p>
+      <p class="footer-sub">Viajes increíbles, momentos inolvidables.</p>
+    </footer>
+
+    <!-- Scripts -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const fechaInput = document.getElementById("fechaSalida");
+        const errorMsg = document.getElementById("errorFecha");
+
+        // Establecer fecha mínima (hoy)
+        const hoy = new Date();
+        const formatoHoy = hoy.toISOString().split("T")[0];
+        fechaInput.min = formatoHoy;
+
+        // Validar al cambiar la fecha
+        fechaInput.addEventListener("input", () => {
+          if (fechaInput.value < formatoHoy) {
+            errorMsg.style.display = "block";
+            fechaInput.value = ""; // borra la fecha inválida
+          } else {
+            errorMsg.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+@use "../utilities/variables" as *;
+
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+
+  p,
+  span {
+    color: #162b55;
+    font-weight: 700;
+  }
+}
